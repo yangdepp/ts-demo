@@ -13,6 +13,7 @@ interface Person {
 
 function greeter(person: Person) {
   return "Hello, " + person.firstName + " " + person.lastName;
+  // return "Hello, " + person.fullName  //报错，传入的时候已经限制了类型是Person
 }
 
 let user = new Student("yang", "J", "Deep");

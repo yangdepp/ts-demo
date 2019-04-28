@@ -21,3 +21,21 @@ function selectSort(a) {
     return a;
 }
 console.log(selectSort([9, 1, 5, 7, 3, 2, 0, 3]));
+//  即使指定返回一个值，也可以不返回，抛一个错
+//  枚举
+var Gender;
+(function (Gender) {
+    Gender[Gender["Male"] = 0] = "Male";
+    Gender[Gender["Female"] = 1] = "Female";
+})(Gender || (Gender = {}));
+function marry(a, b) {
+    if (a.gender !== b.gender) {
+        return [a, b];
+    }
+    else {
+        throw new Error('gender is same');
+    }
+}
+var a = { gender: Gender.Male };
+var b = { gender: Gender.Female };
+console.log(marry(a, b));

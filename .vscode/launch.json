@@ -4,7 +4,8 @@
       "name": "ts-node",
       "type": "node",
       "request": "launch",
-      "program": "/usr/local/bin/ts-node",
+      // "program": "/usr/local/bin/ts-node",
+      "program": "/Users/ydy50/AppData/Roaming/npm/ts-node",
       "args": ["${relativeFile}"],
       "cwd": "${workspaceRoot}",
       "protocol": "inspector"
